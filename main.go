@@ -202,7 +202,6 @@ func findMethodByName(class *Class, methodName string) *Method {
 	return nil
 }
 
-// @TODO: make these methods generic
 func mergeMethodLines(existingMethod *Method, currentMethod *Method) {
 	// Create a map to quickly access line data by line number
 	lineMap := make(map[int]*Line)
